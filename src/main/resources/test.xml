@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vehicle>
+    <storeData>
+        <price>165000</price>
+        <name>
+            <en>a Helmer Kraan Truck</en>
+        </name>
+        <name>a Helmer Kraan Truck</name>
+        <specs>
+            <power>480</power>
+            <maxSpeed>80</maxSpeed>
+        </specs>
+        <brand>Lizard</brand>
+    </storeData>
+</vehicle>
