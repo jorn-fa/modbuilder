@@ -3,6 +3,7 @@ package jorn.hiel;
 import jorn.hiel.helper.XmlReader;
 import jorn.hiel.helper.XmlWriter;
 import jorn.hiel.parts.StoreData;
+import jorn.hiel.parts.VehicleXml;
 import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 
@@ -79,10 +80,16 @@ public class ModBuilder implements Runnable{
         storeData.setPower("480");
         storeData.setMaxSpeed("80");
 
+        VehicleXml vehicleXml = new VehicleXml();
+        vehicleXml.setType("sx210Bale");
+        vehicleXml.setFilename("test.i3d");
+
         //a.writeXml(storeData);
 
-        Document document =
-        storeData.generate(a.generateDocument());
+        Document document = a.generateDocument();
+        vehicleXml.generate(document);
+        //System.out.println(document.getElementById("vehicle"));
+        //document=storeData.generate(document);
 
         a.generateVehicle(document);
 

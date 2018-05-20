@@ -79,7 +79,8 @@ public class StoreData {
 
     public Document generate(Document document) {
 
-        Element rootElement = document.createElement("storeData");
+        //Element rootElement = document.createElement("storeData");
+        Element rootElement=document.getElementById("vehicle");
         boolean specsDone=false;
 
 
