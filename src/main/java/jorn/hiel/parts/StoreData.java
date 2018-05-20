@@ -122,7 +122,7 @@ public class StoreData {
                         workingWidth.appendChild(document.createTextNode(lijst.get(workingWidth)));
                         specs.appendChild(workingWidth);
                     }
-                    
+
 
                     specsDone=true;
                 }
